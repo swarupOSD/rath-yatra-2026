@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RATH YATRA 2026 | Ultimate Cinematic Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium Navbar -->
+    <nav class="premium-nav" role="navigation" aria-label="Main Navigation">
+        <div class="nav-brand">RATH YATRA <span class="gold-text">2026</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero-yatra" tabindex="0" data-i18n="nav.journey">The Journey</a></li>
+            <li><a href="#about" tabindex="0" data-i18n="nav.significance">Significance</a></li>
+            <li><a href="#trinity" tabindex="0" data-i18n="nav.trinity">The Trinity</a></li>
+            <li><a href="#timeline" tabindex="0" data-i18n="nav.timeline">Timeline</a></li>
+            <li><a href="#gallery" tabindex="0" data-i18n="nav.gallery">Art & Culture</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Theme, Language -->
+            <button id="btn-theme" class="icon-btn">🌙</button>
+            <button id="btn-lang" class="icon-btn lang-btn" aria-label="Switch Language" title="Switch Language">EN</button>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section: The Pulling Experience -->
+    <section id="hero-yatra" aria-label="Interactive Rath Pull">
+        <!-- Ambient Atmosphere -->
+        <div id="incense-smoke" aria-hidden="true"></div>
+        <div id="floating-diyas" aria-hidden="true"></div>
+        <div id="flying-pigeons" aria-hidden="true"></div>
+
+        <!-- Parallax World Layers -->
+        <div class="world-layer" id="layer-sky" aria-hidden="true"></div>
+        <div class="world-layer" id="layer-sun" aria-hidden="true">
+            <div class="sun-flare"></div>
+        </div>
+        <div class="world-layer" id="layer-clouds" aria-hidden="true"></div>
+        <div class="world-layer" id="layer-temple" aria-hidden="true">
+            <svg class="temple-svg" viewBox="0 0 1000 600" preserveAspectRatio="none">
+                <path d="M 400 600 L 400 350 L 450 350 L 450 150 L 500 50 L 550 150 L 550 350 L 600 350 L 600 600 Z" fill="#111" />
+                <path d="M 420 600 L 420 350" stroke="#222" stroke-width="4"/>
+                <path d="M 580 600 L 580 350" stroke="#222" stroke-width="4"/>
+                <!-- Neela Chakra -->
+                <circle cx="500" cy="40" r="15" fill="none" stroke="#FFD700" stroke-width="4" filter="drop-shadow(0 0 10px #FFD700)"/>
+                <circle cx="500" cy="40" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
+                <!-- Temple Flag (Patita Pavana Bana) -->
+                <path d="M 500 25 Q 530 15 550 35 Q 520 40 500 25" fill="#FF3D00" class="temple-flag"/>
+                <!-- Smaller shrines -->
+                <path d="M 200 600 L 200 450 L 230 450 L 250 350 L 270 450 L 300 450 L 300 600 Z" fill="#0a0a0a" />
+                <path d="M 700 600 L 700 450 L 730 450 L 750 350 L 770 450 L 800 450 L 800 600 Z" fill="#0a0a0a" />
+            </svg>
+        </div>
+        <div class="world-layer" id="layer-banners" aria-hidden="true">
+            <svg class="banner-svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <!-- Ropes -->
+                <path d="M0,0 Q100,50 200,0 Q300,60 400,0 Q500,40 600,0 Q700,70 800,0 Q900,40 1000,0" fill="none" stroke="#5C4033" stroke-width="2"/>
+                <!-- Cloths -->
+                <polygon points="100,25 80,80 120,80" fill="#FF3D00" class="banner-cloth"/>
+                <polygon points="300,30 280,75 320,75" fill="#FFD700" class="banner-cloth offset-1"/>
+                <polygon points="500,20 480,85 520,85" fill="#E91E63" class="banner-cloth offset-2"/>
+                <polygon points="700,35 680,90 720,90" fill="#FF9800" class="banner-cloth offset-1"/>
+                <polygon points="900,20 880,70 920,70" fill="#FF3D00" class="banner-cloth offset-2"/>
+            </svg>
+        </div>
+        
+        <div class="world-layer crowd-layer" id="crowd-back" aria-hidden="true">
+            <svg viewBox="0 0 2000 300" preserveAspectRatio="none" class="crowd-shape">
+                <!-- Small dense bumps -->
+                <path d="M 0 300 L 0 220 Q 20 200 40 220 T 80 220 T 120 220 T 160 220 T 200 220 T 240 220 T 280 220 T 320 220 T 360 220 T 400 220 T 440 220 T 480 220 T 520 220 T 560 220 T 600 220 T 640 220 T 680 220 T 720 220 T 760 220 T 800 220 T 840 220 T 880 220 T 920 220 T 960 220 T 1000 220 L 1000 300 Z" fill="#030305"/>
+                <path d="M 1000 300 L 1000 220 Q 1020 200 1040 220 T 1080 220 T 1120 220 T 1160 220 T 1200 220 T 1240 220 T 1280 220 T 1320 220 T 1360 220 T 1400 220 T 1440 220 T 1480 220 T 1520 220 T 1560 220 T 1600 220 T 1640 220 T 1680 220 T 1720 220 T 1760 220 T 1800 220 T 1840 220 T 1880 220 T 1920 220 T 1960 220 T 2000 220 L 2000 300 Z" fill="#030305"/>
+            </svg>
+        </div>
+        
+        <div class="world-layer crowd-layer" id="crowd-mid" aria-hidden="true">
+            <svg viewBox="0 0 2000 300" preserveAspectRatio="none" class="crowd-shape">
+                <path d="M 0 300 L 0 240 Q 30 210 60 240 T 120 240 T 180 240 T 240 240 T 300 240 T 360 240 T 420 240 T 480 240 T 540 240 T 600 240 T 660 240 T 720 240 T 780 240 T 840 240 T 900 240 T 960 240 L 1000 300 Z" fill="#07070A"/>
+                <path d="M 1000 300 L 1000 240 Q 1030 210 1060 240 T 1120 240 T 1180 240 T 1240 240 T 1300 240 T 1360 240 T 1420 240 T 1480 240 T 1540 240 T 1600 240 T 1660 240 T 1720 240 T 1780 240 T 1840 240 T 1900 240 T 1960 240 L 2000 300 Z" fill="#07070A"/>
+            </svg>
+            <div class="waving-hands">
+                <div class="hand" style="left: 15%; animation-delay: 0.1s;"></div>
+                <div class="hand" style="left: 35%; animation-delay: 0.4s;"></div>
+                <div class="hand" style="left: 65%; animation-delay: 0.2s;"></div>
+                <div class="hand" style="left: 85%; animation-delay: 0.7s;"></div>
+            </div>
+        </div>
+        
+        <div class="world-layer crowd-layer" id="crowd-front" aria-hidden="true">
+            <svg viewBox="0 0 2000 300" preserveAspectRatio="none" class="crowd-shape">
+                <path d="M 0 300 L 0 260 Q 40 230 80 260 T 160 260 T 240 260 T 320 260 T 400 260 T 480 260 T 560 260 T 640 260 T 720 260 T 800 260 T 880 260 T 960 260 L 1000 300 Z" fill="#0A0A10"/>
+                <path d="M 1000 300 L 1000 260 Q 1040 230 1080 260 T 1160 260 T 1240 260 T 1320 260 T 1400 260 T 1480 260 T 1560 260 T 1640 260 T 1720 260 T 1800 260 T 1880 260 T 1960 260 L 2000 300 Z" fill="#0A0A10"/>
+            </svg>
+            <div class="priests-rituals">
+                <!-- Priest 1 with Diya -->
+                <div class="priest-figure" style="left: 30%;">
+                    <div class="priest-body"></div>
+                    <div class="priest-arm"><div class="aarti-flame"></div></div>
+                </div>
+                <!-- Priest 2 with Diya -->
+                <div class="priest-figure" style="left: 60%; animation-delay: 0.5s;">
+                    <div class="priest-body"></div>
+                    <div class="priest-arm offset"><div class="aarti-flame"></div></div>
+                </div>
+            </div>
+            <div class="crowd-flags">
+                <div class="tiny-flag" style="left: 20%; animation-delay: 0.1s;"></div>
+                <div class="tiny-flag" style="left: 45%; animation-delay: 0.5s;"></div>
+                <div class="tiny-flag" style="left: 75%; animation-delay: 0.2s;"></div>
+                <div class="tiny-flag" style="left: 95%; animation-delay: 0.8s;"></div>
+            </div>
+        </div>
+        
+        <div class="world-layer" id="layer-ground" aria-hidden="true"></div>
+        
+        <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+        <!-- World Space (Moves with Camera) -->
+        <div id="world-space" aria-hidden="true">
+            <div id="chariot-container">
+                <div class="chariot-flags">
+                    <svg viewBox="0 0 100 150" class="flag-svg">
+                        <path class="flag-cloth" d="M10,150 L10,0 L90,30 L10,60 L90,90 L10,120" fill="#FF3D00" stroke="#FFD700" stroke-width="2"/>
+                        <line x1="10" y1="0" x2="10" y2="150" stroke="#FFD700" stroke-width="4"/>
+                    </svg>
+                    <!-- Small flags -->
+                    <svg viewBox="0 0 50 100" class="flag-svg small" style="left: 40px; top: 50px;">
+                        <path class="flag-cloth" d="M5,100 L5,0 L45,25 L5,50" fill="#FFD700" stroke="#FF3D00" stroke-width="2"/>
+                        <line x1="5" y1="0" x2="5" y2="100" stroke="#FFF" stroke-width="2"/>
+                    </svg>
+                </div>
+
+                <!-- Cinematic Environment -->
+                <div id="god-rays"></div>
+                
+                <!-- Main Chariot SVG -->
+                <svg class="chariot-body" viewBox="0 0 500 600" preserveAspectRatio="xMidYMax meet">
+                    <defs>
+                        <linearGradient id="woodG" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#8B4513" /><stop offset="50%" stop-color="#A0522D" /><stop offset="100%" stop-color="#5C4033" />
+                        </linearGradient>
+                        <linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FFD700" /><stop offset="50%" stop-color="#FFF8DC" /><stop offset="100%" stop-color="#B8860B" />
+                        </linearGradient>
+                        <linearGradient id="canopyG" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#D32F2F" /><stop offset="25%" stop-color="#FBC02D" /><stop offset="50%" stop-color="#D32F2F" /><stop offset="75%" stop-color="#FBC02D" /><stop offset="100%" stop-color="#D32F2F" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Canopy -->
+                    <path d="M 50 250 Q 250 50 450 250 Z" fill="url(#canopyG)" stroke="url(#goldG)" stroke-width="5"/>
+                    <path d="M 100 250 Q 250 100 400 250" fill="none" stroke="url(#goldG)" stroke-width="3"/>
+                    <path d="M 150 250 Q 250 150 350 250" fill="none" stroke="url(#goldG)" stroke-width="3"/>
+                    <circle cx="250" cy="50" r="15" fill="url(#goldG)"/>
+                    <polygon points="245,50 255,50 250,15" fill="url(#goldG)"/>
+                    
+                    <!-- Pillars & Garlands -->
+                    <rect x="70" y="250" width="20" height="150" fill="url(#goldG)"/>
+                    <rect x="170" y="250" width="15" height="150" fill="url(#goldG)"/>
+                    <rect x="315" y="250" width="15" height="150" fill="url(#goldG)"/>
+                    <rect x="410" y="250" width="20" height="150" fill="url(#goldG)"/>
+                    <path class="garland" d="M 70 260 Q 120 290 170 260" fill="none" stroke="#4CAF50" stroke-width="8" stroke-dasharray="8 6"/>
+                    <path class="garland" d="M 170 260 Q 242 290 315 260" fill="none" stroke="#FF9800" stroke-width="8" stroke-dasharray="8 6"/>
+                    <path class="garland" d="M 315 260 Q 362 290 410 260" fill="none" stroke="#4CAF50" stroke-width="8" stroke-dasharray="8 6"/>
+
+                    <!-- Sanctum -->
+                    <rect x="90" y="250" width="320" height="150" fill="#1a1a1a" />
+                    <!-- Deity Image inside Rath -->
+                    <image href="assets/images/deities/jagannath.jpg" xlink:href="assets/images/deities/jagannath.jpg" x="110" y="255" width="280" height="140" preserveAspectRatio="xMidYMid meet" />
+                    
+                    <!-- Base -->
+                    <rect x="40" y="400" width="420" height="30" fill="url(#woodG)" stroke="#3e2723" stroke-width="2"/>
+                    <rect x="20" y="430" width="460" height="60" fill="url(#woodG)" stroke="#3e2723" stroke-width="3"/>
+                    <rect x="50" y="490" width="400" height="20" fill="url(#woodG)" stroke="#3e2723" stroke-width="2"/>
+                    <path d="M 30 445 L 470 445" stroke="url(#goldG)" stroke-width="4" stroke-dasharray="15 10"/>
+                    <path d="M 30 475 L 470 475" stroke="url(#goldG)" stroke-width="4" stroke-dasharray="15 10"/>
+                    <circle cx="100" cy="460" r="10" fill="url(#goldG)"/>
+                    <circle cx="250" cy="460" r="15" fill="url(#goldG)"/>
+                    <circle cx="400" cy="460" r="10" fill="url(#goldG)"/>
+                </svg>
+
+                <div class="wheels-container">
+                    <!-- Wheels -->
+                    <svg class="wheel" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#5C4033" stroke="#FFD700" stroke-width="6"/>
+                        <g stroke="#FFD700" stroke-width="4">
+                            <line x1="50" y1="5" x2="50" y2="95"/><line x1="5" y1="50" x2="95" y2="50"/>
+                            <line x1="18" y1="18" x2="82" y2="82"/><line x1="18" y1="82" x2="82" y2="18"/>
+                        </g>
+                        <circle cx="50" cy="50" r="10" fill="#FFFFFF" stroke="#B8860B" stroke-width="3"/>
+                    </svg>
+                    <svg class="wheel" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#5C4033" stroke="#FFD700" stroke-width="6"/>
+                        <g stroke="#FFD700" stroke-width="4">
+                            <line x1="50" y1="5" x2="50" y2="95"/><line x1="5" y1="50" x2="95" y2="50"/>
+                            <line x1="18" y1="18" x2="82" y2="82"/><line x1="18" y1="82" x2="82" y2="18"/>
+                        </g>
+                        <circle cx="50" cy="50" r="10" fill="#FFFFFF" stroke="#B8860B" stroke-width="3"/>
+                    </svg>
+                    <svg class="wheel" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#5C4033" stroke="#FFD700" stroke-width="6"/>
+                        <g stroke="#FFD700" stroke-width="4">
+                            <line x1="50" y1="5" x2="50" y2="95"/><line x1="5" y1="50" x2="95" y2="50"/>
+                            <line x1="18" y1="18" x2="82" y2="82"/><line x1="18" y1="82" x2="82" y2="18"/>
+                        </g>
+                        <circle cx="50" cy="50" r="10" fill="#FFFFFF" stroke="#B8860B" stroke-width="3"/>
+                    </svg>
+                    <svg class="wheel" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#5C4033" stroke="#FFD700" stroke-width="6"/>
+                        <g stroke="#FFD700" stroke-width="4">
+                            <line x1="50" y1="5" x2="50" y2="95"/><line x1="5" y1="50" x2="95" y2="50"/>
+                            <line x1="18" y1="18" x2="82" y2="82"/><line x1="18" y1="82" x2="82" y2="18"/>
+                        </g>
+                        <circle cx="50" cy="50" r="10" fill="#FFFFFF" stroke="#B8860B" stroke-width="3"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI Overlay for Pulling -->
+        <div id="pull-ui">
+            <div class="progress-hud" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="hud-header">
+                    <h2 data-i18n="hero.title">Journey to Gundicha</h2>
+                    <span id="progress-text" aria-live="polite">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progress-bar"><div class="energy-flow"></div></div>
+                </div>
+                <div class="milestone-text" id="milestone-caption" data-i18n="hero.pull">Pull the rope left to move the Rath</div>
+            </div>
+            
+            <div id="rope-system">
+                <svg class="rope-svg" preserveAspectRatio="none">
+                    <path id="rope-line" d="M 0 50 Q 500 50 1000 50" stroke="url(#goldRopeGradient)" stroke-width="12" fill="none" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="goldRopeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#8B6508" /><stop offset="50%" stop-color="#FFF8DC" /><stop offset="100%" stop-color="#8B6508" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <button id="pull-handle">
+                    <div class="handle-pulse"></div>
+                    <span data-i18n="hero.btn">PULL</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Cinematic Celebration (Unlocks at 100%) -->
+    <section id="celebration" class="cinematic-celebration-section locked-section" aria-hidden="true" role="dialog">
+        <!-- Cinematic Environment -->
+        <div class="celeb-environment">
+            <div class="golden-god-rays"></div>
+            <div class="falling-flowers"></div>
+            <div class="celeb-sparkles"></div>
+            <div class="incense-clouds"></div>
+        </div>
+        
+        <div class="celeb-container relative-z">
+            <h1 id="victory-title" class="cinzel gold-gradient-text glow-text fade-scale-up" data-i18n="celeb.title">Jai Jagannath</h1>
+            <p class="celeb-subtitle fade-up delay-1" data-i18n="celeb.subtitle">The Divine Journey is Complete.</p>
+            
+            <div class="blessing-panel fade-up delay-2">
+                <div class="blessing-image asset-placeholder">
+                    <!-- Replace with your own high-quality image: assets/images/blessing/jagannath-blessing.webp -->
+                    <img src="assets/images/blessing/jagannath-blessing.jpg" alt="Lord Jagannath Blessing" class="lazy-image" onerror="this.style.opacity=0">
+                    <div class="placeholder-hint" data-i18n="celeb.blessing">Divine Blessing</div>
+                </div>
+                
+                <div class="blessing-message">
+                    <h3 class="cinzel gold-text" data-i18n="celeb.blessing">Divine Blessing</h3>
+                    <p class="silver-text" data-i18n="celeb.blessingMsg">"May Lord Jagannath bless you with peace, prosperity and happiness."</p>
+                </div>
+            </div>
+            
+            <div class="celeb-actions fade-up delay-3">
+                <button id="btn-restart" class="celeb-btn primary" tabindex="0">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>
+                    <span data-i18n="celeb.pullAgain">Pull Again</span>
+                </button>
+                <button class="celeb-btn secondary">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    <span data-i18n="celeb.share">Share Celebration</span>
+                </button>
+                <button class="celeb-btn secondary">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    <span data-i18n="celeb.download">Download Screenshot</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Significance (Museum Experience) -->
+    <section id="about" class="heritage-museum-section" aria-label="Significance of the Festival">
+        <div class="museum-container">
+            <!-- Left Side: Storytelling -->
+            <div class="museum-content">
+                <div class="museum-header reveal">
+                    <h2 class="cinzel gold-gradient-text" data-i18n="about.title">The Cosmic Journey</h2>
+                    <div class="golden-divider"></div>
+                </div>
+                
+                <div class="heritage-card reveal delay-1">
+                    <h3 class="cinzel gold-text" data-i18n="about.q1">What is Rath Yatra?</h3>
+                    <p data-i18n="about.a1">An ancient spectacle where the Lord of the Universe emerges from His sacred sanctum. It is a rare global phenomenon where deities leave their temple to mingle with devotees regardless of caste, creed, or background.</p>
+                </div>
+                
+                <div class="heritage-card reveal delay-2">
+                    <h3 class="cinzel gold-text" data-i18n="about.q2">Why Lord Jagannath Travels</h3>
+                    <p data-i18n="about.a2">Driven by divine love, Lord Jagannath travels with His siblings, Lord Balabhadra and Devi Subhadra, to the Gundicha Temple—representing their birth aunt's home—for a majestic nine-day vacation.</p>
+                </div>
+                
+                <div class="heritage-card reveal delay-3">
+                    <h3 class="cinzel gold-text" data-i18n="about.q3">Spiritual Resonance</h3>
+                    <p data-i18n="about.a3">Symbolizing the journey of the soul towards supreme consciousness, the Rath Yatra bridges humanity and the divine. Recognized globally, it stands as a monumental testament to India's living, breathing heritage.</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Art & Architecture -->
+            <div class="museum-art">
+                <div class="art-layer bg-mandala">
+                    <svg viewBox="0 0 200 200" class="rotating-mandala" aria-hidden="true">
+                        <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255,215,0,0.15)" stroke-width="2" stroke-dasharray="10 5"/>
+                        <circle cx="100" cy="100" r="70" fill="none" stroke="rgba(255,215,0,0.3)" stroke-width="1"/>
+                        <path d="M100 10 L115 80 L190 100 L115 120 L100 190 L85 120 L10 100 L85 80 Z" fill="rgba(255,215,0,0.05)" stroke="rgba(255,215,0,0.4)" stroke-width="1"/>
+                        <path d="M100 30 Q130 60 100 100 Q70 60 100 30 Z" fill="rgba(255,215,0,0.1)" stroke="rgba(255,215,0,0.5)"/>
+                        <path d="M100 170 Q130 140 100 100 Q70 140 100 170 Z" fill="rgba(255,215,0,0.1)" stroke="rgba(255,215,0,0.5)"/>
+                        <path d="M170 100 Q140 70 100 100 Q140 130 170 100 Z" fill="rgba(255,215,0,0.1)" stroke="rgba(255,215,0,0.5)"/>
+                        <path d="M30 100 Q60 70 100 100 Q60 130 30 100 Z" fill="rgba(255,215,0,0.1)" stroke="rgba(255,215,0,0.5)"/>
+                    </svg>
+                </div>
+                
+                <div class="museum-timeline reveal delay-2">
+                    <div class="timeline-step">
+                        <div class="step-icon">3</div>
+                        <div class="step-text" data-i18n="about.stat1">Majestic Chariots</div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-icon">9</div>
+                        <div class="step-text" data-i18n="about.stat2">Sacred Days</div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-icon">1M+</div>
+                        <div class="step-text" data-i18n="about.stat3">Global Devotees</div>
+                    </div>
+                </div>
+                
+                <div class="floating-petals" aria-hidden="true">
+                    <div class="petal-flower"></div>
+                    <div class="petal-flower delay-1"></div>
+                    <div class="petal-flower delay-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. The Divine Trinity (Museum Showcase) -->
+    <section id="trinity" class="trinity-museum-section" aria-label="The Divine Trinity">
+        <div class="trinity-bg-art">
+            <div class="trinity-mandala"></div>
+            <div class="trinity-particles"></div>
+        </div>
+        
+        <div class="container relative-z">
+            <div class="museum-header reveal text-center">
+                <h2 class="cinzel gold-gradient-text" data-i18n="trinity.title">The Divine Trinity</h2>
+                <div class="golden-divider center-div"></div>
+            </div>
+            
+            <div class="trinity-premium-grid">
+                <!-- Balabhadra (Left) -->
+                <div class="trinity-museum-card aura-balabhadra reveal">
+                    <div class="card-ornament top-left"></div>
+                    <div class="card-ornament top-right"></div>
+                    <div class="card-ornament bottom-left"></div>
+                    <div class="card-ornament bottom-right"></div>
+                    
+                    <div class="deity-halo">
+                        <div class="halo-rays"></div>
+                        <div class="deity-img-wrapper asset-placeholder">
+                            <img src="assets/images/deities/balabhadra.jfif" alt="Lord Balabhadra" class="lazy-image" onerror="this.style.opacity=0">
+                            <div class="placeholder-hint">Lord Balabhadra</div>
+                        </div>
+                    </div>
+                    <h3 class="cinzel silver-text" data-i18n="trinity.bala">Lord Balabhadra</h3>
+                    <div class="card-divider"></div>
+                    <div class="deity-info">
+                        <p class="desc" data-i18n="trinity.balaDesc">The elder brother, embodiment of immense spiritual strength and profound wisdom.</p>
+                        <p><strong data-i18n="trinity.symbol">Symbolism:</strong> <span data-i18n="trinity.balaSymbol">Cosmic power & agriculture.</span></p>
+                        <p><strong data-i18n="trinity.role">Role in Rath Yatra:</strong> <span data-i18n="trinity.balaRole">Leads the grand procession on his magnificent green and red chariot, <em>Taladhwaja</em>.</span></p>
+                    </div>
+                </div>
+
+                <!-- Jagannath (Center) -->
+                <div class="trinity-museum-card center-deity aura-jagannath reveal delay-1">
+                    <div class="card-ornament top-left"></div>
+                    <div class="card-ornament top-right"></div>
+                    <div class="card-ornament bottom-left"></div>
+                    <div class="card-ornament bottom-right"></div>
+                    
+                    <div class="deity-halo">
+                        <div class="halo-particles"></div>
+                        <div class="deity-img-wrapper asset-placeholder">
+                            <img src="assets/images/deities/jagannath.jpg" alt="Lord Jagannath" class="lazy-image" onerror="this.style.opacity=0">
+                            <div class="placeholder-hint">Lord Jagannath</div>
+                        </div>
+                    </div>
+                    <h3 class="cinzel gold-text" data-i18n="trinity.jaga">Lord Jagannath</h3>
+                    <div class="card-divider"></div>
+                    <div class="deity-info">
+                        <p class="desc" data-i18n="trinity.jagaDesc">The Supreme Lord of the Universe, bearing large, compassionate, and unblinking eyes.</p>
+                        <p><strong data-i18n="trinity.symbol">Symbolism:</strong> <span data-i18n="trinity.jagaSymbol">Infinite love & supreme consciousness.</span></p>
+                        <p><strong data-i18n="trinity.role">Role in Rath Yatra:</strong> <span data-i18n="trinity.jagaRole">The cosmic focal point, riding the colossal yellow and red chariot, <em>Nandighosa</em>.</span></p>
+                    </div>
+                </div>
+                
+                <!-- Subhadra (Right) -->
+                <div class="trinity-museum-card aura-subhadra reveal delay-2">
+                    <div class="card-ornament top-left"></div>
+                    <div class="card-ornament top-right"></div>
+                    <div class="card-ornament bottom-left"></div>
+                    <div class="card-ornament bottom-right"></div>
+                    
+                    <div class="deity-halo">
+                        <div class="halo-glow"></div>
+                        <div class="deity-img-wrapper asset-placeholder">
+                            <img src="assets/images/deities/subhadra.jfif" alt="Devi Subhadra" class="lazy-image" onerror="this.style.opacity=0">
+                            <div class="placeholder-hint">Devi Subhadra</div>
+                        </div>
+                    </div>
+                    <h3 class="cinzel bronze-text" data-i18n="trinity.sub">Devi Subhadra</h3>
+                    <div class="card-divider"></div>
+                    <div class="deity-info">
+                        <p class="desc" data-i18n="trinity.subDesc">The beloved sister, a source of boundless auspiciousness, harmony, and cosmic energy.</p>
+                        <p><strong data-i18n="trinity.symbol">Symbolism:</strong> <span data-i18n="trinity.subSymbol">Pure devotion & compassion.</span></p>
+                        <p><strong data-i18n="trinity.role">Role in Rath Yatra:</strong> <span data-i18n="trinity.subRole">Bridges the brothers on her graceful black and red chariot, <em>Darpadalana</em>.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sacred Timeline Journey -->
+    <section id="timeline" class="journey-timeline-section" aria-label="Festival Timeline">
+        <div class="timeline-bg">
+            <div class="timeline-mandala left-mandala"></div>
+            <div class="timeline-mandala right-mandala"></div>
+            <div class="timeline-particles"></div>
+        </div>
+        
+        <div class="container relative-z">
+            <div class="museum-header reveal text-center">
+                <h2 class="cinzel gold-gradient-text" data-i18n="tl.title">The Divine Pilgrimage</h2>
+                <div class="golden-divider center-div"></div>
+                <p class="timeline-subtitle" data-i18n="tl.subtitle">A cosmic journey from the sacred bath to the eternal return.</p>
+            </div>
+            
+            <div class="premium-timeline">
+                <div class="timeline-center-line">
+                    <div class="timeline-fill-line"></div>
+                </div>
+                
+                <!-- 1. Snana Yatra -->
+                <div class="journey-node reveal left">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/snana.jfif" alt="Snana Yatra" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.snanaDate">Jyeshtha Purnima</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.snana">Snana Yatra</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.snanaDesc">The grand bathing festival. The Lords are brought out and bathed with 108 pitchers of sacred, herbal water, leading to their symbolic fever.</p>
+                    </div>
+                </div>
+                
+                <!-- 2. Anavasara -->
+                <div class="journey-node reveal-slide right">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/anavasara.jpg" alt="Anavasara" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.anaDate">15 Days Retreat</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.ana">Anavasara</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.anaDesc">A period of absolute secrecy and healing. The ailing deities rest in the secret chamber (Anasara Ghara), receiving traditional herbal treatments.</p>
+                    </div>
+                </div>
+                
+                <!-- 3. Nava Jaubana Darshan -->
+                <div class="journey-node reveal-slide left">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/nava-jaubana.jfif" alt="Nava Jaubana" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.navaDate">Pre-Yatra</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.nava">Nava Jaubana Darshan</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.navaDesc">The rejuvenated Lords reveal their fresh, youthful, and vibrant appearance to the masses, sparking immense devotion and joy.</p>
+                    </div>
+                </div>
+                
+                <!-- 4. Rath Yatra -->
+                <div class="journey-node reveal-slide right">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/rath-yatra.webp" alt="Rath Yatra" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.rathDate">Ashadha Shukla Dwitiya</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.rath">Rath Yatra</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.rathDesc">The grand procession begins. The Trinity mounts their colossal chariots, pulled by millions of devotees towards the Gundicha Temple.</p>
+                    </div>
+                </div>
+                
+                <!-- 5. Gundicha Temple -->
+                <div class="journey-node reveal-slide left">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/gundicha.webp" alt="Gundicha Temple" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.gunDate">7 Days Stay</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.gun">Gundicha Temple Arrival</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.gunDesc">The Lords arrive at their aunt's abode, where they are treated with unparalleled affection, special delicacies, and deep devotion.</p>
+                    </div>
+                </div>
+                
+                <!-- 6. Hera Panchami -->
+                <div class="journey-node reveal-slide right">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/hera-panchami.webp" alt="Hera Panchami" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.heraDate">5th Day</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.hera">Hera Panchami</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.heraDesc">Goddess Lakshmi, furious at being left behind, visits Gundicha Temple to secretly damage Lord Jagannath's chariot in an act of divine anger.</p>
+                    </div>
+                </div>
+                
+                <!-- 7. Bahuda Yatra -->
+                <div class="journey-node reveal-slide left">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/bahuda.jfif" alt="Bahuda Yatra" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.bahuDate">Return Journey</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.bahu">Bahuda Yatra</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.bahuDesc">The grand return. Bidding farewell to their aunt, the Lords trace their path back to the majestic Sri Mandira.</p>
+                    </div>
+                </div>
+                
+                <!-- 8. Suna Besha -->
+                <div class="journey-node reveal-slide right">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/suna-besha.jfif" alt="Suna Besha" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.sunaDate">Golden Attire</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.suna">Suna Besha</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.sunaDesc">Upon their chariots outside the main temple, the Lords are adorned in spectacular, heavy golden armor and ornaments, a sight of blinding glory.</p>
+                    </div>
+                </div>
+                
+                <!-- 9. Niladri Bije -->
+                <div class="journey-node reveal-slide left">
+                    <div class="node-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="icon-wrapper asset-placeholder">
+                            <img src="assets/images/timeline/niladri-bije.jfif" alt="Niladri Bije" class="lazy-image" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <span class="day-badge" data-i18n="tl.nilDate">The Final Ascent</span>
+                        <h4 class="cinzel gold-text" data-i18n="tl.nil">Niladri Bije</h4>
+                        <div class="card-divider"></div>
+                        <p data-i18n="tl.nilDesc">The eternal return to the sanctum. Lord Jagannath appeases Goddess Lakshmi with Rasagolas before finally re-entering the Ratna Singhasana.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Premium SVG Gallery -->
+    <section id="gallery" class="gallery-museum-section" aria-label="Sacred Gallery">
+        <div class="gallery-bg-art">
+            <div class="gallery-mandala"></div>
+            <div class="gallery-light-beams"></div>
+            <div class="gallery-particles"></div>
+            <div class="gallery-floating-petals">
+                <div class="petal"></div><div class="petal p2"></div><div class="petal p3"></div>
+            </div>
+        </div>
+        <div class="container relative-z">
+            <div class="museum-header reveal text-center">
+                <h2 class="cinzel gold-gradient-text" data-i18n="gallery.title">Divine Exhibition</h2>
+                <div class="golden-divider center-div"></div>
+            </div>
+            <div class="gallery-filters reveal delay-1">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="temple">Temple</button>
+                <button class="filter-btn" data-filter="rath">Rath</button>
+                <button class="filter-btn" data-filter="festival">Festival</button>
+                <button class="filter-btn" data-filter="devotees">Devotees</button>
+                <button class="filter-btn" data-filter="decorations">Decorations</button>
+            </div>
+            <div class="gallery-masonry reveal delay-2">
+
+                <!-- 1. Sri Mandira -->
+                <div class="gallery-item large" data-category="temple">
+                    <div class="gallery-svg-card" onclick="openLightbox(0)">
+                        <img src="assets/images/gallery-1.jpeg" class="gallery-svg-art" alt="Gallery Image 1">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Sri Mandira</h4><p>Puri, Odisha</p></div>
+                    </div>
+                </div>
+
+                <!-- 2. Nandighosa -->
+                <div class="gallery-item tall" data-category="rath">
+                    <div class="gallery-svg-card" onclick="openLightbox(1)">
+                        <img src="assets/images/gallery-2.jfif" class="gallery-svg-art" alt="Gallery Image 2">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Nandighosa</h4><p>Bada Danda</p></div>
+                    </div>
+                </div>
+
+                <!-- 3. Pahandi Bije -->
+                <div class="gallery-item" data-category="festival">
+                    <div class="gallery-svg-card" onclick="openLightbox(2)">
+                        <img src="assets/images/gallery-3.jfif" class="gallery-svg-art" alt="Gallery Image 3">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Pahandi Bije</h4><p>Singhadwara</p></div>
+                    </div>
+                </div>
+
+                <!-- 4. Sea of Devotees -->
+                <div class="gallery-item wide" data-category="devotees">
+                    <div class="gallery-svg-card" onclick="openLightbox(3)">
+                        <img src="assets/images/gallery-4.jfif" class="gallery-svg-art" alt="Gallery Image 4">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Sea of Devotees</h4><p>Grand Road</p></div>
+                    </div>
+                </div>
+
+                <!-- 5. Floral Adornments -->
+                <div class="gallery-item" data-category="decorations">
+                    <div class="gallery-svg-card" onclick="openLightbox(4)">
+                        <img src="assets/images/gallery-5.webp" class="gallery-svg-art" alt="Gallery Image 5">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Floral Adornments</h4><p>Chariot Canopy</p></div>
+                    </div>
+                </div>
+
+                <!-- 6. Taladhwaja -->
+                <div class="gallery-item tall" data-category="rath">
+                    <div class="gallery-svg-card" onclick="openLightbox(5)">
+                        <img src="assets/images/gallery-6.jfif" class="gallery-svg-art" alt="Gallery Image 6">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Taladhwaja</h4><p>The Grand Pull</p></div>
+                    </div>
+                </div>
+
+                <!-- 7. Gundicha Temple -->
+                <div class="gallery-item wide" data-category="temple">
+                    <div class="gallery-svg-card" onclick="openLightbox(6)">
+                        <img src="assets/images/gallery-7.jfif" class="gallery-svg-art" alt="Gallery Image 7">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Gundicha Temple</h4><p>Saradha Bali</p></div>
+                    </div>
+                </div>
+
+                <!-- 8. Suna Besha -->
+                <div class="gallery-item" data-category="festival">
+                    <div class="gallery-svg-card" onclick="openLightbox(7)">
+                        <img src="assets/images/gallery-8.webp" class="gallery-svg-art" alt="Gallery Image 8">
+                        <div class="svg-card-overlay"><h4 class="cinzel gold-text">Suna Besha</h4><p>Lion's Gate</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Lightbox -->
+    <div id="gallery-lightbox" class="lightbox-overlay" aria-hidden="true" role="dialog">
+        <button id="lightbox-close" class="lightbox-btn close-btn" aria-label="Close Lightbox" onclick="closeLightbox()">&times;</button>
+        <button id="lightbox-prev" class="lightbox-btn nav-btn left-btn" aria-label="Previous Image" onclick="changeLightbox(-1)">&#10094;</button>
+        <div class="lightbox-content-wrapper">
+            <div id="lightbox-svg-container" class="lightbox-svg-wrap"></div>
+            <div id="lightbox-caption" class="lightbox-caption cinzel gold-text"></div>
+            <div id="lightbox-location" class="lightbox-location"></div>
+        </div>
+        <button id="lightbox-next" class="lightbox-btn nav-btn right-btn" aria-label="Next Image" onclick="changeLightbox(1)">&#10095;</button>
+    </div>
+
+
+    <!-- 6. Cinematic Quotes -->
+    <section id="quotes" class="content-section" aria-label="Cinematic Quotes">
+        <div class="container quotes-container reveal">
+            <h2 class="cinzel gold-text" data-i18n="quote.text">"He who beholds the Lord upon the Chariot is forever freed from the endless cycle of birth and rebirth."</h2>
+            <p class="quote-author" data-i18n="quote.author">— Ancient Scriptures</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer" role="contentinfo">
+        <div class="container">
+            <h2 class="cinzel gold-text">RATH YATRA 2026</h2>
+            <p data-i18n="footer.desc">An interactive digital tribute to the Lord of the Universe, meticulously crafted for devotion and awe.</p>
+            <div class="footer-links">
+                <a href="#hero-yatra" data-i18n="nav.journey">The Journey</a> | <a href="#about" data-i18n="nav.significance">Significance</a> | <a href="#trinity" data-i18n="nav.trinity">The Trinity</a>
+            </div>
+            <p class="copyright" data-i18n="footer.copy">&copy; 2026 Crafted with ❤️ by Snehashis Roy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Audio Elements (Silently ignored if files are missing) -->
+    <!-- Replace src with your own high-quality audio files in the assets/audio folder -->
+    <audio id="sfx-bg" loop preload="auto"><source src="assets/audio/background.webm" type="audio/webm"></audio>
+    <audio id="sfx-bell" preload="auto"><source src="assets/audio/bells.webm" type="audio/webm"></audio>
+    <audio id="sfx-cheer" preload="auto"><source src="assets/audio/celebration.mp3" type="audio/mpeg"></audio>
+    <audio id="sfx-conch" preload="auto"><source src="assets/audio/conch.mp3" type="audio/mpeg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
