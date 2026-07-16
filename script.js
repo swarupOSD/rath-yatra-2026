@@ -427,6 +427,35 @@ document.getElementById('btn-restart').addEventListener('click', () => {
     UI.handle.focus();
 });
 
+// Share functionality
+document.getElementById('btn-share').addEventListener('click', async () => {
+    const shareData = {
+        title: 'Rath Yatra 2026',
+        text: 'I just completed the Divine Journey of Lord Jagannath! Experience the interactive Rath Yatra:',
+        url: window.location.href
+    };
+    try {
+        if (navigator.share) {
+            await navigator.share(shareData);
+        } else {
+            await navigator.clipboard.writeText(shareData.text + ' ' + shareData.url);
+            alert('Link copied to clipboard!');
+        }
+    } catch (err) {
+        console.log('Share failed:', err);
+    }
+});
+
+// Download Screenshot functionality
+document.getElementById('btn-download').addEventListener('click', () => {
+    const a = document.createElement('a');
+    a.href = 'assets/images/blessing/jagannath-blessing.jpg';
+    a.download = 'Rath-Yatra-2026-Blessings.jpg';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
+
 // Theme toggler
 document.getElementById('btn-theme').addEventListener('click', () => {
     const html = document.documentElement;
