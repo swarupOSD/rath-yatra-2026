@@ -58,11 +58,9 @@ const AudioEngine = {
     },
     play(id) { 
         if(!this.muted && this[id]) { 
-            if (this[id].paused || this[id].ended) {
-                this[id].currentTime = 0; 
-                let p = this[id].play();
-                if(p!==undefined) p.catch(()=>{});
-            }
+            this[id].currentTime = 0; 
+            let p = this[id].play();
+            if(p!==undefined) p.catch(()=>{});
         }
     }
 };
