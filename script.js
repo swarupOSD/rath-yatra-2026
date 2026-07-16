@@ -155,8 +155,7 @@ UI.handle.addEventListener('pointermove', e => {
 function endDrag(e) {
     if (State.dragging) {
         State.dragging = false;
-        // Snap the handle visually back, but chariot momentum continues via friction
-        State.handleOffset = 0; 
+        // Let the render loop smoothly lerp handleOffset back to 0
         UI.handle.releasePointerCapture(e.pointerId);
     }
 }
@@ -328,6 +327,10 @@ function loop() {
             if (Math.random() < Math.abs(State.charV) * 0.01) {
                 AudioEngine.play('bell');
             }
+        } else if (!State.dragging && State.handleOffset < 0) {
+            // Smoothly spring the handle back to the center
+            State.handleOffset -= State.handleOffset * 0.2;
+            if (State.handleOffset > -0.5) State.handleOffset = 0;
         }
         
         State.charX += State.charV;
